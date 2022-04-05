@@ -1,0 +1,110 @@
+[
+    {
+        "Area": "Single Stage",
+        "LocalManager": "Gabriel Raica",
+        "Problema": "Scule",
+        "DescriereaProblemei": "descrie problema",
+        "Prio": "Prio3",
+        "Responsabil": "Rober",
+        "PrioRevizuit": "Prio2",
+        "Status": "0%",
+        "DeadLine": "31\/04\/2022",
+        "Observatii": "qweasd"
+    },
+    {
+        "Area": "Multi Stage",
+        "LocalManager": "Nicolae Gabriel",
+        "Problema": "Scule",
+        "DescriereaProblemei": "descrie problema",
+        "Prio": "Prio1",
+        "Responsabil": "Rober",
+        "PrioRevizuit": "Prio2",
+        "Status": "0%",
+        "DeadLine": "31\/04\/2022",
+        "Observatii": "qweqw"
+    },
+    {
+        "Area": "Keelbeam",
+        "LocalManager": "Gabriel Raica",
+        "Problema": "Scule",
+        "DescriereaProblemei": "descrie problema",
+        "Prio": "Prio1",
+        "Responsabil": "Daniel",
+        "PrioRevizuit": "tbd",
+        "Status": "tbd",
+        "DeadLine": "tbd",
+        "Observatii": ""
+    },
+    {
+        "Area": "Cargo Door",
+        "LocalManager": "Gabriel Raica",
+        "Problema": "Consumabile",
+        "DescriereaProblemei": "descrie problema",
+        "Prio": "Prio2",
+        "Responsabil": "Daniel",
+        "PrioRevizuit": "Prio4",
+        "Status": "0%",
+        "DeadLine": "03\/10\/2022",
+        "Observatii": "asdasdasdasdasda"
+    },
+    {
+        "Area": "Framework A350",
+        "LocalManager": "Nicolae Gabriel",
+        "Problema": "Consumabile",
+        "DescriereaProblemei": "descrie problema",
+        "Prio": "Prio2",
+        "Responsabil": "Adrian",
+        "PrioRevizuit": "Prio1",
+        "Status": "",
+        "DeadLine": "17\/04\/2022",
+        "Observatii": "qwe"
+    },
+    {
+        "Area": "Keelbeam",
+        "LocalManager": "Gabriel Raica",
+        "Problema": "Scule",
+        "DescriereaProblemei": "alezor 22",
+        "Prio": "Prio1",
+        "Responsabil": "Daniel",
+        "PrioRevizuit": "tbd",
+        "Status": "tbd",
+        "DeadLine": "tbd",
+        "Observatii": ""
+    },
+    {
+        "Area": "Cargo Door",
+        "LocalManager": "Gabriel Raica",
+        "Problema": "Consumabile",
+        "DescriereaProblemei": "",
+        "Prio": "Prio4",
+        "Responsabil": "Daniel",
+        "PrioRevizuit": "tbd",
+        "Status": "tbd",
+        "DeadLine": "tbd",
+        "Observatii": ""
+    },
+    {
+        "Area": "Framework",
+        "LocalManager": "Nicolae Gabriel",
+        "Problema": "Consumabile",
+        "DescriereaProblemei": "nu am chef de munca",
+        "Prio": "Prio3",
+        "Responsabil": "Adrian",
+        "PrioRevizuit": "Prio4",
+        "Status": "0%",
+        "DeadLine": "03\/10\/2022",
+        "Observatii": "sdfsdf"
+    },
+    {
+        "Area": "Dado Angle",
+        "LocalManager": "Nicolae Gabriel",
+        "Problema": "Scule",
+        "DescriereaProblemei": "burgiu",
+        "Prio": "Prio1",
+        "Responsabil": "Sorin",
+        "PrioRevizuit": "tbd",
+        "Status": "tbd",
+        "DeadLine": "tbd",
+        "Observatii": ""
+    }
+]

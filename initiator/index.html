@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiator</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="./send.js" defer></script>
+</head>
+<body>
+    <header class="container-fluid bg-warning">
+        <p class="h4 ms-2">Raportare Problema</p>
+        <form class="container pb-3" action="../connect.php" method="post" id="form">
+            <article class="row">
+                <div class="col">
+                    <label>Area:</label>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="SingleStage" 
+                            value="Single Stage">
+                            <label class="form-check-label" for="Single Stage">Single Stage</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="Galerie" 
+                            value="Galerie">
+                            <label class="form-check-label" for="Galerie">Galerie</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="MultiStage" 
+                            value="Multi Stage">
+                            <label class="form-check-label" for="Multi Stage">Multi Stage</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="DadoAngle" 
+                            value="Dado Angle">
+                            <label class="form-check-label" for="Dado Angle">Dado Angle</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="DadoPanel" 
+                            value="Dado Panel">
+                            <label class="form-check-label" for="Dado Panel">Dado Panel</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="CargoDoor" 
+                            value="Cargo Door">
+                            <label class="form-check-label" for="Cargo Door">Cargo door</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="Keelbeam" 
+                            value="Keelbeam">
+                            <label class="form-check-label" for="Keelbeam">Keelbeam</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="Framework" 
+                            value="Framework">
+                            <label class="form-check-label" for="Framework">Framework</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Area" 
+                            type="radio" 
+                            id="FrameworkA350" 
+                            value="Framework A350">
+                            <label class="form-check-label" for="Framework A350">Framework A350</label>
+                    </div>
+                </div>
+                <div class="col form-group">
+                    <label>Local manager:</label>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="LocalManager" 
+                            type="radio" 
+                            id="GabrielRaica" 
+                            value="Gabriel Raica">
+                            <label class="form-check-label" for="Gabriel Raica">Gabriel Raica</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="LocalManager" 
+                            type="radio" 
+                            id="NicolaeGabriel" 
+                            value="Nicolae Gabriel">
+                            <label class="form-check-label" for="Nicolae Gabriel">Nicolae Gabriel</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label>Problema:</label>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Problema" 
+                            type="radio" 
+                            id="Scule" 
+                            value="Scule">
+                            <label class="form-check-label" for="Scule">Scule</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Problema" 
+                            type="radio" 
+                            id="Consumabile" 
+                            value="Consumabile">
+                            <label class="form-check-label" for="Consumabile">Consumabile</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="DescriereaProblemei">Descriere problemei:</label>
+                    <textarea style="height:90%" name="DescriereaProblemei" id="DescriereaProblemei" placeholder="descrie problema"></textarea>
+                </div>
+                <div class="col">
+                    <label>Prio:</label>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Prio" 
+                            type="radio" 
+                            id="Prio0" 
+                            value="Prio0">
+                            <label class="form-check-label" for="Prio0">Prio 0</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Prio" 
+                            type="radio" 
+                            id="Prio1" 
+                            value="Prio1">
+                            <label class="form-check-label" for="Prio1">Prio 1</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Prio" 
+                            type="radio" 
+                            id="Prio2" 
+                            value="Prio2"
+                            checked="checked">
+                            <label class="form-check-label" for="Prio2">Prio 2</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Prio" 
+                            type="radio" 
+                            id="Prio3" 
+                            value="Prio3">
+                            <label class="form-check-label" for="Prio3">Prio 3</label>
+                    </div>
+                    <div class="form-check">
+                       <input class="form-check-input" 
+                            name="Prio" 
+                            type="radio" 
+                            id="Prio4" 
+                            value="Prio4">
+                            <label class="form-check-label" for="Prio4">Prio 4</label>
+                    </div>
+                </div>
+            </article>
+            <article class="row justify-content-between mt-3">
+                <button class="col-md-auto btn btn-secondary">Clear</button>
+                <button class="col-md-auto btn btn-primary" id="send" type="submit" name="submit" value="submit">Send</button>                
+            </article>      
+        </form>
+    </header>
+    <main class="container-fluid bg-secondary">
+        <p class="h4 ms-2">baza de date</p>
+        <section class="container-fluid border" id="fill">
+            <div class="row bg-secondary">
+                <div class="col-1 border">
+                    <p class="h6">Area</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Local Manager</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Problema</p>
+                </div>
+                <div class="col-2 border">
+                    <p class="h6">Descrierea Problemei</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Prio</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Responsabil</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Prio revizuit</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Status</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Dead line</p>
+                </div>
+                <div class="col-2 border">
+                    <p class="h6">Observatii</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

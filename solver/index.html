@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solver</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">   
+    <script src="./database.js" defer></script>
+    <script src="./solver.js" defer></script>  
+</head>
+<body>
+    <main class="container-fluid bg-secondary">
+        <p class="h4 ms-2">baza de date</p>
+        <section class="container-fluid border" id="fill">
+            <div class="row bg-secondary">
+                <div class="col-1 border">
+                    <p class="h6">Area</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Local Manager</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Problema</p>
+                </div>
+                <div class="col-2 border">
+                    <p class="h6">Descrierea Problemei</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Prio</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Responsabil</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Prio revizuit</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Status</p>
+                </div>
+                <div class="col-1 border">
+                    <p class="h6">Dead line</p>
+                </div>
+                <div class="col-2 border">
+                    <p class="h6">Observatii</p>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <form class="container mx-auto mt-5 row bg-secondary d-none" action="../update.php" method="post" id="form1">
+            <div class="col-2">
+                <label>Prio-revizuit:</label>
+                <div class="form-check">
+                   <input class="form-check-input" 
+                        name="Prio" 
+                        type="radio" 
+                        id="Prio0" 
+                        value="Prio0">
+                        <label class="form-check-label" for="Prio0">Prio 0</label>
+                </div>
+                <div class="form-check">
+                   <input class="form-check-input" 
+                        name="Prio" 
+                        type="radio" 
+                        id="Prio1" 
+                        value="Prio1">
+                        <label class="form-check-label" for="Prio1">Prio 1</label>
+                </div>
+                <div class="form-check">
+                   <input class="form-check-input" 
+                        name="Prio" 
+                        type="radio" 
+                        id="Prio2" 
+                        value="Prio2">
+                        <label class="form-check-label" for="Prio2">Prio 2</label>
+                </div>
+                <div class="form-check">
+                   <input class="form-check-input" 
+                        name="Prio" 
+                        type="radio" 
+                        id="Prio3" 
+                        value="Prio3">
+                        <label class="form-check-label" for="Prio3">Prio 3</label>
+                </div>
+                <div class="form-check">
+                   <input class="form-check-input" 
+                        name="Prio" 
+                        type="radio" 
+                        id="Prio4" 
+                        value="Prio4">
+                        <label class="form-check-label" for="Prio4">Prio 4</label>
+                </div>
+            </div>
+            <div class="col-3">
+                <label for="Status">Status:</label><br>
+                <input type="text" name="Status" id="Status" placeholder="creaza pasi"></input>
+            </div>
+            <div class="col-3">
+                <label for="Dead-line">Dead-line:</label><br>
+                <input type="text" name="Dead-line" id="Dead-line" placeholder="selecteaza prio"></input>
+            </div>
+            <div class="col-4">
+                <label for="obs">Obsevatiile cu privire la pasii de implementare</label><br>    
+                    <input 
+                        type="text" 
+                        id="obs"
+                        name="obs" 
+                        placeholder="scrie succesiunea pasilor"
+                        autocomplete="off"
+                    /><br>
+                <ul id="todos" style="list-style-type:none">
+                </ul>                
+                <small>Dublu-click pentru stergere si adaugare de pasi</small>
+            </div>
+            <div>
+                <input class="d-none" type="number" name="index" id="index"></input>
+            </div>
+            <button class="col mx-auto bg-primary" id="send" type="submit" name="update" value="update">Send</button>
+        </form> 
+    </footer> 
+    
+</body>
+</html>
